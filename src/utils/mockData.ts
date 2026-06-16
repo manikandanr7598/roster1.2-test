@@ -1,4 +1,4 @@
-import type { Employee, Shift, Department, Product } from '../types';
+import type { Employee, Shift, Department } from '../types';
 
 export const mockDepartments: Department[] = [
   { id: 'dept-1', name: 'Engineering', hourlyRate: 35 },
@@ -129,11 +129,4 @@ export const mockShifts: Shift[] = [
     endTime: '19:00',
     status: 'Completed'
   }
-];
-
-export const mockProducts: Product[] = [
-  { id: 'prod-1', name: 'Widget A', sku: 'WID-001', category: 'Electronics', quantity: 100, unitPrice: 29.99, reorderLevel: 20, lastUpdated: new Date().toISOString().split('T')[0] },
-  { id: 'prod-2', name: 'Widget B', sku: 'WID-002', category: 'Electronics', quantity: 50, unitPrice: 49.99, reorderLevel: 15, lastUpdated: new Date().toISOString().split('T')[0] },
-  { id: 'prod-3', name: 'Gadget X', sku: 'GAD-001', category: 'Accessories', quantity: 75, unitPrice: 19.99, reorderLevel: 30, lastUpdated: new Date().toISOString().split('T')[0] },
-  { id: 'prod-4', name: 'Gadget Y', sku: 'GAD-002', category: 'Accessories', quantity: 30, unitPrice: 39.99, reorderLevel: 10, lastUpdated: new Date().toISOString().split('T')[0] }
 ];

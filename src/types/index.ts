@@ -29,17 +29,6 @@ export interface Department {
   hourlyRate: number;
 }
 
-export interface Product {
-  id: string;
-  name: string;
-  sku: string;
-  category: string;
-  quantity: number;
-  unitPrice: number;
-  reorderLevel: number;
-  lastUpdated: string;
-}
-
 export interface DashboardStats {
   totalEmployees: number;
   activeEmployees: number;
